@@ -1,0 +1,17 @@
+# Allow image files
+<Files ~ "\.(jpg|jpeg|png|gif|webp)$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Deny access to other file types
+<Files ~ "\.">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Re-allow image files
+<Files ~ "\.(jpg|jpeg|png|gif|webp)$">
+    Order allow,deny
+    Allow from all
+</Files>
