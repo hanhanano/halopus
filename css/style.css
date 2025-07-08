@@ -701,6 +701,7 @@ body {
     height: 60px;
     position: fixed;
     z-index: 999;
+    display: none !important;
 }
 
 .icon {
